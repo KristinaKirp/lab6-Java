@@ -8,7 +8,7 @@ import ru.Kirpikova.Annotation.Two;
  * Параметр first пустой, second отрицательный. Используется для тестирования выброса исключений.
  * </p>
  *
- * @see AnnotationProcessor#twoProcess(Class)
+ * @see AnnotationProcessor#twoProcess(Object)
  * @see Two
  */
 @Two(first = "", second = -1)

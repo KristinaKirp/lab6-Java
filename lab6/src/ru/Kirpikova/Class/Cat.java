@@ -1,5 +1,6 @@
 package ru.Kirpikova.Class;
 
+import ru.Kirpikova.Annotation.Cache;
 import ru.Kirpikova.Annotation.ToString;
 import ru.Kirpikova.Annotation.Two;
 /**
@@ -12,6 +13,7 @@ import ru.Kirpikova.Annotation.Two;
  * @see ToString
  * @see Two
  */
+
 @ToString
 @Two(first = "Кошка", second = 64)
 public class Cat {
@@ -34,6 +36,5 @@ public class Cat {
     public Cat(String name) {
         this.name = name;
     }
-
 
 }

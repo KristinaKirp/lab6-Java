@@ -118,12 +118,12 @@ public class AnnotationProcessor {
         Class<?> clazz = obj.getClass();
         if (clazz.isAnnotationPresent(Validate.class)) {
             Validate annotation = clazz.getAnnotation(Validate.class);
-            System.out.println("Классы для проверки в аннотации @ru.Kirpikova.Annotation.Validate:");
+            System.out.println("Классы для проверки в аннотации @Validate:");
             for (Class<?> c : annotation.value()) {
                 System.out.println(c.getName());
             }
         } else {
-            System.out.println("Аннотация @ru.Kirpikova.Annotation.Validate не найдена.");
+            System.out.println("Аннотация @Validate не найдена.");
         }
     }
 
@@ -144,8 +144,8 @@ public class AnnotationProcessor {
             if (annotation.second() < 0) {
                 throw new IllegalArgumentException("second отрицательное число");
             }
-            System.out.println("Значение first: " + annotation.first());
-            System.out.println("Значение second: " + annotation.second());
+            System.out.println("first: " + annotation.first());
+            System.out.println("second: " + annotation.second());
         } else {
             System.out.println("Аннотация Two не найдена.");
         }

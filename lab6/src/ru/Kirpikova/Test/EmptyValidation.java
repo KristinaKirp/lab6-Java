@@ -8,7 +8,7 @@ import ru.Kirpikova.Annotation.Validate;
  * Используется для тестирования обработки пустого массива классов.
  * </p>
  *
- * @see AnnotationProcessor#getValidatedClasses(Class)
+ * @see AnnotationProcessor#getValidatedClasses(Object)
  * @see Validate
  */
 @Validate({})

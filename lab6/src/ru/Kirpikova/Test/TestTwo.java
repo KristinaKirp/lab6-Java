@@ -1,7 +1,7 @@
 package ru.Kirpikova.Test;
-
-import org.junit.jupiter.api.Test;
 import ru.Kirpikova.Annotation.AnnotationProcessor;
+import org.junit.jupiter.api.Test;
+
 import ru.Kirpikova.Annotation.Two;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -12,12 +12,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  * Использует JUnit 5 для тестирования.
  * </p>
  *
- * @see AnnotationProcessor#twoProcess(Class)
  * @see Two
  */
 public class TestTwo {
     /**
-     * Проверяет, что метод {@link AnnotationProcessor#twoProcess(Class)}
+     * Проверяет, что метод {@link AnnotationProcessor#twoProcess(Object)}
      * выбрасывает {@link IllegalArgumentException} для некорректной аннотации {@link Two}.
      */
     @Test

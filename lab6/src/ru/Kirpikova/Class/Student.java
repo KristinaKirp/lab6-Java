@@ -11,12 +11,12 @@ import java.util.Arrays;
  * Класс, представляющий студента.
  * <p>
  * Хранит имя, массив оценок и средний балл (GPA).
- * Использует аннотацию {@link Validate} для указания классов для проверки.
+ * Использует аннотацию {@link Invoke} для автоматического вывода информации о студенте.
  * </p>
  *
- * @see Validate
+ * @see Invoke
  */
-@Validate({String.class, int[].class, double.class})
+
 public class Student {
     private final String name;
     private int[] grades;

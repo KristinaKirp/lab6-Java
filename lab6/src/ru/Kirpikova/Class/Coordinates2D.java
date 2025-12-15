@@ -2,6 +2,8 @@ package ru.Kirpikova.Class;
 
 import ru.Kirpikova.Annotation.Cache;
 import ru.Kirpikova.Annotation.Default;
+import ru.Kirpikova.Annotation.Validate;
+
 /**
  * Класс для координат в 2D.
  * <p>
@@ -12,18 +14,27 @@ import ru.Kirpikova.Annotation.Default;
  * @see Default
  * @see Cache
  */
-@Default(String.class)
-@Cache({"Position", "Velocity", "Acceleration"})
-
-public class Coordinates2D {
+@Cache({"x", "y"})
+@Default(Coordinates2D.class)
+public class Coordinates2D{
     private int x;
     private int y;
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
     /**
      * Конструктор для создания объекта с координатами X и Y.
      *
      * @param x координата X
      * @param y координата Y
      */
+
     public Coordinates2D(int x, int y) {
         this.x = x;
         this.y = y;
